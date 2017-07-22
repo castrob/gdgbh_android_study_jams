@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         textscoreAteam = (TextView) findViewById(R.id.scoreA);
         textscoreBteam = (TextView) findViewById(R.id.scoreB);
     }
-
+/** /
     public void scoreThreePointsTeamA (View v){
         scoreAteam = scoreAteam + 3;
         textscoreAteam.setText(String.valueOf(scoreAteam));
@@ -33,6 +33,27 @@ public class MainActivity extends AppCompatActivity {
         textscoreBteam.setText(String.valueOf(scoreBteam));
     }
 
+/**/
+    public void scoreThreePoints (View v){
+        if (v.getId() == R.id.btn_threepointsA){
+            scoreAteam = scoreAteam + 3;
+            textscoreAteam.setText(String.valueOf(scoreAteam));
+        }else {
+            scoreBteam = scoreBteam + 3;
+            textscoreBteam.setText(String.valueOf(scoreBteam));
+        }
+    }
+
+    public void scoreTwoPoints (View v){
+        if (v.getId() == R.id.btn_twopointsA){
+            scoreAteam = scoreAteam + 2;
+            textscoreAteam.setText(String.valueOf(scoreAteam));
+        }else{
+            scoreBteam = scoreBteam + 2;
+            textscoreBteam.setText(String.valueOf(scoreBteam));
+        }
+    }
+/** /
     public void scoreTwoPointsTeamA (View v){
         scoreAteam = scoreAteam + 2;
         textscoreAteam.setText(String.valueOf(scoreAteam));
@@ -42,7 +63,19 @@ public class MainActivity extends AppCompatActivity {
         scoreBteam = scoreBteam + 2;
         textscoreBteam.setText(String.valueOf(scoreBteam));
     }
+/**/
 
+    public void freeThrow (View v) {
+        if (v.getId() == R.id.btn_freethrowA) {
+            scoreAteam = scoreAteam + 1;
+            textscoreAteam.setText(String.valueOf(scoreAteam));
+        } else {
+            scoreBteam = scoreBteam + 1;
+            textscoreBteam.setText(String.valueOf(scoreBteam));
+        }
+    }
+
+/** /
     public void freeThrowAteam (View v){
         scoreAteam = scoreAteam + 1;
         textscoreAteam.setText(String.valueOf(scoreAteam));
@@ -52,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         scoreBteam = scoreBteam + 1;
         textscoreBteam.setText(String.valueOf(scoreBteam));
     }
-
+/**/
     public void resetScore (View v){
         scoreAteam = 0;
         scoreBteam = 0;
