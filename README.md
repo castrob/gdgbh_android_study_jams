@@ -1,4 +1,4 @@
-# gdgbh_android_study_jams
+# Android Study Jam - GDGBH
 
 ### Tasks and projects from android study jams by Google Developers.
 This repository contains projects that i did at Android Study Jam - 7/2017.
