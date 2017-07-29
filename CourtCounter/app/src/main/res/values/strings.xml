@@ -8,4 +8,5 @@
     <string name="btn_twopoints">+2 POINTS</string>
     <string name="btn_freethrow">FREE THROW</string>
     <string name="btn_reset">RESET</string>
+    <string name="Finish_Match">Finish Match</string>
 </resources>
